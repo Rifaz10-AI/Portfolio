@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rifaz Gurramkonda | AI Engineer & Python Developer</title>
+  <meta name="description" content="Portfolio of Rifaz Gurramkonda – AI Engineer specializing in Agentic AI, LLMs, RAG, FastAPI and scalable backend solutions."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Syne:wght@700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+
+<!-- ── NAVBAR ── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">RG<span class="logo-dot">.</span></a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="https://drive.google.com/file/d/1LaeeGzji_K2DF3KWiZOzD19wBoiTZ5Rs/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="nav-btn">Resume <span class="nav-btn-arrow">↗</span></a>
+    <button class="burger" id="burger">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-inner">
+    <div class="hero-left" data-reveal>
+      <div class="hero-eyebrow"><span class="dot-pulse"></span> Hello, I'm Rifaz Gurramkonda</div>
+      <h1 class="hero-title">
+        <span class="reveal-line">Rifaz</span>
+        <span class="reveal-line delay-1">Gurramkonda</span>
+      </h1>
+      <div class="hero-sub">
+        <span class="type-prefix">I build </span><span class="typewriter" id="typewriter"></span>
+      </div>
+      <p class="hero-desc">Aspiring AI Engineer passionate about <strong>Agentic AI</strong>, <strong>LLMs</strong>, <strong>RAG pipelines</strong> and production-grade backend systems that solve real problems.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" id="hero-projects-btn">
+          <span>Explore Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://drive.google.com/file/d/1LaeeGzji_K2DF3KWiZOzD19wBoiTZ5Rs/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="btn-ghost" id="hero-resume-btn">View Resume ↗</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Rifaz10-AI" target="_blank" class="social-pill" id="hero-github">GitHub</a>
+        <a href="https://www.linkedin.com/in/gurramkonda-rifaz-2777ab275/" target="_blank" class="social-pill" id="hero-linkedin">LinkedIn</a>
+        <a href="https://leetcode.com/u/gurramkondarifaz/" target="_blank" class="social-pill" id="hero-leetcode">LeetCode</a>
+      </div>
+    </div>
+    <div class="hero-right" data-reveal>
+      <div class="photo-frame">
+        <div class="photo-orbit orbit-1"></div>
+        <div class="photo-orbit orbit-2"></div>
+        <div class="photo-bg-glow"></div>
+        <img src="profile.png" alt="Rifaz Gurramkonda" class="photo-img" id="profile-img"/>
+        <div class="photo-tag tag-tl"><span>🎓</span> VIT Amaravati</div>
+        <div class="photo-tag tag-br"><span>🤖</span> AI Engineer</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="sec-label" data-reveal>About Me</div>
+    <div class="about-grid">
+      <div class="about-text-col" data-reveal>
+        <h2 class="about-heading">Turning complex problems into <em>intelligent solutions</em></h2>
+        <p>I'm a <strong>Computer Science & Engineering</strong> student at <strong>VIT Amaravati</strong>, driven by a deep passion for AI that actually works in production — not just notebooks.</p>
+        <p>My focus spans <strong>Agentic AI</strong>, <strong>Generative AI</strong>, <strong>LLMs</strong> and <strong>RAG pipelines</strong>. I build full-stack AI applications using Python, Flask, and FastAPI, integrating them with vector databases and modern LLM APIs. I also work with <strong>ML/DL</strong> frameworks and practice <strong>DSA</strong> regularly to keep my problem-solving sharp.</p>
+        <p>I have working knowledge of <strong>Docker & Kubernetes</strong> basics for containerisation, and I'm always pushing to ship cleaner, smarter systems.</p>
+        <div class="about-badges">
+          <span class="badge">🐍 Python-first</span>
+          <span class="badge">🤖 LLM Practitioner</span>
+          <span class="badge">⚡ API Builder</span>
+          <span class="badge">🧩 DSA Solver</span>
+          <span class="badge">🐳 Docker Basics</span>
+        </div>
+      </div>
+      <div class="about-edu-col" data-reveal>
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <span class="edu-period">2022 – 2026</span>
+            <h4>B.Tech – Computer Science & Engineering</h4>
+            <p>Vellore Institute of Technology, Amaravati</p>
+            <div class="edu-score">CGPA 8.12 / 10</div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">📚</div>
+          <div class="edu-info">
+            <span class="edu-period">Graduated Jun 2022</span>
+            <h4>Intermediate Education (MPC)</h4>
+            <p>Sri Chaitanya Junior College, Tirupathi</p>
+            <div class="edu-score">GPA 9.34 / 10</div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-info">
+            <span class="edu-period">Graduated Jun 2020</span>
+            <h4>10th Grade</h4>
+            <p>Narayana High School, Tirupathi</p>
+            <div class="edu-score">GPA 9.81 / 10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="sec-label" data-reveal>Tech Stack</div>
+    <h2 class="sec-title centered" data-reveal>Skills & <em>Expertise</em></h2>
+    <div class="skills-mosaic">
+
+      <div class="skill-block big" data-reveal>
+        <div class="sb-icon">🤖</div>
+        <h3>AI / ML / DL</h3>
+        <div class="skill-chips">
+          <span>LLMs</span><span>RAG</span><span>Agentic AI</span>
+          <span>Generative AI</span><span>Prompt Engineering</span>
+          <span>Scikit-learn</span><span>TensorFlow</span>
+          <span>PyTorch</span><span>Deep Learning</span>
+          <span>LIME / XAI</span><span>Hugging Face</span>
+        </div>
+        <div class="sb-bar-row">
+          <div class="sb-bar-item">
+            <span>LLMs & RAG</span>
+            <div class="sb-bar"><div class="sb-fill" style="--p:88%"></div></div>
+            <span class="sb-pct">88%</span>
+          </div>
+          <div class="sb-bar-item">
+            <span>ML / DL</span>
+            <div class="sb-bar"><div class="sb-fill" style="--p:84%"></div></div>
+            <span class="sb-pct">84%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-block" data-reveal>
+        <div class="sb-icon">💻</div>
+        <h3>Programming</h3>
+        <div class="skill-chips">
+          <span>Python</span><span>Java</span>
+          <span>SQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="sb-bar-row">
+          <div class="sb-bar-item">
+            <span>Python</span>
+            <div class="sb-bar"><div class="sb-fill" style="--p:92%"></div></div>
+            <span class="sb-pct">92%</span>
+          </div>
+          <div class="sb-bar-item">
+            <span>Java (DSA)</span>
+            <div class="sb-bar"><div class="sb-fill" style="--p:85%"></div></div>
+            <span class="sb-pct">85%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-block" data-reveal>
+        <div class="sb-icon">🧩</div>
+        <h3>DSA</h3>
+        <div class="skill-chips">
+          <span>Java</span><span>Arrays</span><span>Linked Lists</span>
+          <span>Trees</span><span>Graphs</span><span>DP</span>
+          <span>Recursion</span><span>Sorting</span><span>Hashing</span>
+        </div>
+        <a href="https://leetcode.com/u/gurramkondarifaz/" target="_blank" class="sb-link" id="skills-leetcode-btn">
+          View LeetCode Profile →
+        </a>
+      </div>
+
+      <div class="skill-block" data-reveal>
+        <div class="sb-icon">⚡</div>
+        <h3>Backend & APIs</h3>
+        <div class="skill-chips">
+          <span>FastAPI</span><span>Flask</span>
+          <span>REST APIs</span><span>API Integration</span>
+          <span>MySQL</span><span>SQLite</span>
+        </div>
+        <div class="sb-bar-row">
+          <div class="sb-bar-item">
+            <span>FastAPI / Flask</span>
+            <div class="sb-bar"><div class="sb-fill" style="--p:85%"></div></div>
+            <span class="sb-pct">85%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-block" data-reveal>
+        <div class="sb-icon">🛠️</div>
+        <h3>Tools & DevOps</h3>
+        <div class="skill-chips">
+          <span>Git</span><span>GitHub</span>
+          <span>Docker</span><span>Kubernetes</span>
+          <span>VS Code</span><span>Jupyter</span>
+          <span>ChromaDB</span><span>Google Colab</span>
+        </div>
+        <div class="sb-bar-row">
+          <div class="sb-bar-item">
+            <span>Git / GitHub</span>
+            <div class="sb-bar"><div class="sb-fill" style="--p:87%"></div></div>
+            <span class="sb-pct">87%</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="sec-label" data-reveal>Work</div>
+    <h2 class="sec-title centered" data-reveal>Featured <em>Projects</em></h2>
+    <div class="projects-list">
+
+      <div class="proj-card" data-reveal>
+        <div class="proj-meta">
+          <span class="proj-num">01</span>
+          <span class="proj-type">ML + Flask + XAI</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-icon-title">
+            <span class="proj-emoji">🌾</span>
+            <h3>Explainable AI Smart Crop Recommendation System</h3>
+          </div>
+          <p>End-to-end ML system benchmarking 5 models and achieving <strong>99.32% accuracy</strong> with Random Forest across 7 soil & climate parameters. Delivers top-3 crop predictions, NPK guidance, risk alerts, yield & revenue estimation, and a full crop lifecycle plan using LIME Explainability.</p>
+          <div class="proj-highlights">
+            <span>✦ 99.32% Random Forest Accuracy</span>
+            <span>✦ LIME Explainability (XAI)</span>
+            <span>✦ User Auth + SQLite</span>
+            <span>✦ Yield & Revenue Simulation</span>
+          </div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <code>Python</code><code>Flask</code><code>Scikit-learn</code><code>LIME</code><code>SQLite</code><code>Jinja2</code>
+            </div>
+            <a href="https://github.com/Rifaz10-AI" target="_blank" class="proj-link" id="proj1-github">
+              GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card featured-proj" data-reveal>
+        <div class="proj-meta">
+          <span class="proj-num">02</span>
+          <span class="proj-type">GenAI + RAG + LLM</span>
+          <span class="proj-star">⭐ Featured</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-icon-title">
+            <span class="proj-emoji">⚖️</span>
+            <h3>AI-Powered Legal Document Generator</h3>
+          </div>
+          <p>Automates formal Indian legal complaint generation using <strong>Gemini AI</strong> and <strong>ChromaDB</strong>. Implements semantic RAG search for IPC sections and generates court-ready PDFs — cutting document prep from hours to minutes.</p>
+          <div class="proj-highlights">
+            <span>✦ Gemini LLM Integration</span>
+            <span>✦ RAG with ChromaDB</span>
+            <span>✦ Semantic IPC Section Search</span>
+            <span>✦ Court-Ready PDF Output</span>
+          </div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <code>Python</code><code>Gemini AI</code><code>ChromaDB</code><code>RAG</code><code>FastAPI</code><code>PDF Gen</code>
+            </div>
+            <a href="https://github.com/Rifaz10-AI" target="_blank" class="proj-link" id="proj2-github">
+              GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-reveal>
+        <div class="proj-meta">
+          <span class="proj-num">03</span>
+          <span class="proj-type">NLP + Transformers + FastAPI</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-icon-title">
+            <span class="proj-emoji">📝</span>
+            <h3>AI Text Summarizer — T5 Transformer</h3>
+          </div>
+          <p>Production-ready NLP application using <strong>T5 transformer</strong> via Hugging Face for high-quality abstractive text summarization. Built with <strong>FastAPI</strong> for an API-first architecture with a clean web interface.</p>
+          <div class="proj-highlights">
+            <span>✦ T5 Transformer (Hugging Face)</span>
+            <span>✦ Abstractive Summarization</span>
+            <span>✦ FastAPI REST Architecture</span>
+          </div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <code>Python</code><code>FastAPI</code><code>Hugging Face</code><code>T5</code><code>PyTorch</code>
+            </div>
+            <a href="https://github.com/Rifaz10-AI/Text--Summarizer" target="_blank" class="proj-link" id="proj3-github">
+              GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-reveal>
+        <div class="proj-meta">
+          <span class="proj-num">04</span>
+          <span class="proj-type">Data Science + EDA + ML</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-icon-title">
+            <span class="proj-emoji">💳</span>
+            <h3>Creditwise — Loan Eligibility Predictor</h3>
+          </div>
+          <p>Data science project with deep <strong>Exploratory Data Analysis</strong>, feature engineering and a Gaussian Naive Bayes model achieving <strong>86% accuracy</strong> and <strong>81% precision</strong> on historical loan data.</p>
+          <div class="proj-highlights">
+            <span>✦ Deep EDA & Visualizations</span>
+            <span>✦ 86% Accuracy / 81% Precision</span>
+            <span>✦ Feature Engineering Pipeline</span>
+          </div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <code>Python</code><code>Pandas</code><code>NumPy</code><code>Scikit-learn</code><code>Seaborn</code>
+            </div>
+            <a href="https://github.com/Rifaz10-AI/Creditwise-loan-system" target="_blank" class="proj-link" id="proj4-github">
+              GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CERTIFICATIONS ── -->
+<section id="certifications">
+  <div class="section-wrap">
+    <div class="sec-label" data-reveal>Achievements</div>
+    <h2 class="sec-title centered" data-reveal>Certifications & <em>Activities</em></h2>
+    <div class="cert-row">
+      <div class="cert-tile" data-reveal>
+        <div class="ct-top"><span class="ct-icon">🏅</span><span class="ct-badge">Certified</span></div>
+        <h4>Programming Essentials in Python</h4>
+        <p>CISCO Networking Academy</p>
+      </div>
+      <div class="cert-tile" data-reveal>
+        <div class="ct-top"><span class="ct-icon">🍃</span><span class="ct-badge">Certified</span></div>
+        <h4>MongoDB Database Administration</h4>
+        <p>MongoDB University</p>
+      </div>
+      <div class="cert-tile" data-reveal>
+        <div class="ct-top"><span class="ct-icon">🧩</span><span class="ct-badge">Active</span></div>
+        <h4>DSA & Competitive Programming</h4>
+        <p>LeetCode · GeeksForGeeks · Coding Platforms</p>
+        <a href="https://leetcode.com/u/gurramkondarifaz/" target="_blank" class="ct-link" id="cert-leetcode">View Profile →</a>
+      </div>
+      <div class="cert-tile" data-reveal>
+        <div class="ct-top"><span class="ct-icon">⚡</span><span class="ct-badge">Active</span></div>
+        <h4>Hackathons & Tech Summits</h4>
+        <p>Google Summits · TED Talks · National Hackathons</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RESUME CTA ── -->
+<section id="resume-cta">
+  <div class="section-wrap">
+    <div class="cta-banner" data-reveal>
+      <div class="cta-text">
+        <h2>Let's work together</h2>
+        <p>View my resume for the complete picture — projects, skills, and education.</p>
+      </div>
+      <a href="https://drive.google.com/file/d/1LaeeGzji_K2DF3KWiZOzD19wBoiTZ5Rs/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="btn-primary large" id="cta-resume-btn">
+        <span>View Resume</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="sec-label" data-reveal>Contact</div>
+    <h2 class="sec-title centered" data-reveal>Get In <em>Touch</em></h2>
+    <div class="contact-grid">
+      <div class="contact-left" data-reveal>
+        <p class="contact-intro">Open to internships, collaborations, and full-time AI/backend roles. Let's build something meaningful.</p>
+        <div class="contact-cards">
+          <a href="mailto:gurramkondarifaz@gmail.com" class="cc" id="contact-email">
+            <div class="cc-icon">📧</div>
+            <div><strong>Email</strong><span>gurramkondarifaz@gmail.com</span></div>
+            <div class="cc-arrow">→</div>
+          </a>
+          <a href="https://www.linkedin.com/in/gurramkonda-rifaz-2777ab275/" target="_blank" class="cc" id="contact-linkedin">
+            <div class="cc-icon">💼</div>
+            <div><strong>LinkedIn</strong><span>gurramkonda-rifaz</span></div>
+            <div class="cc-arrow">→</div>
+          </a>
+          <a href="https://github.com/Rifaz10-AI" target="_blank" class="cc" id="contact-github">
+            <div class="cc-icon">🐙</div>
+            <div><strong>GitHub</strong><span>Rifaz10-AI</span></div>
+            <div class="cc-arrow">→</div>
+          </a>
+          <a href="https://leetcode.com/u/gurramkondarifaz/" target="_blank" class="cc" id="contact-leetcode">
+            <div class="cc-icon">🧩</div>
+            <div><strong>LeetCode</strong><span>gurramkondarifaz</span></div>
+            <div class="cc-arrow">→</div>
+          </a>
+          <a href="tel:+916304796976" class="cc" id="contact-phone">
+            <div class="cc-icon">📱</div>
+            <div><strong>Phone</strong><span>+91 6304796976</span></div>
+            <div class="cc-arrow">→</div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form" data-reveal>
+        <div class="cf-group">
+          <input type="text" id="cf-name" placeholder=" " required/>
+          <label for="cf-name">Your Name</label>
+        </div>
+        <div class="cf-group">
+          <input type="email" id="cf-email" placeholder=" " required/>
+          <label for="cf-email">Email Address</label>
+        </div>
+        <div class="cf-group">
+          <input type="text" id="cf-subject" placeholder=" "/>
+          <label for="cf-subject">Subject</label>
+        </div>
+        <div class="cf-group">
+          <textarea id="cf-msg" rows="5" placeholder=" " required></textarea>
+          <label for="cf-msg">Message</label>
+        </div>
+        <button type="submit" class="btn-primary" id="cf-submit">
+          <span>Send Message</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+        </button>
+        <p class="cf-success" id="cf-success">✅ Message sent! I'll get back to you soon.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">RG<span class="logo-dot">.</span></div>
+    <p class="footer-tagline">Building intelligent systems, one commit at a time.</p>
+    <div class="footer-links">
+      <a href="https://github.com/Rifaz10-AI" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/gurramkonda-rifaz-2777ab275/" target="_blank">LinkedIn</a>
+      <a href="https://leetcode.com/u/gurramkondarifaz/" target="_blank">LeetCode</a>
+      <a href="mailto:gurramkondarifaz@gmail.com">Email</a>
+    </div>
+    <p class="footer-copy">© 2026 Rifaz Gurramkonda. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
